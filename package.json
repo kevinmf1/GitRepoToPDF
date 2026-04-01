@@ -1,0 +1,89 @@
+{
+  "name": "git-repo-to-pdf",
+  "version": "1.0.0",
+  "description": "A CLI tool for generating a PDF document from a GitHub repository, with enriched Markdown and SVG support.",
+  "main": "dist/clone.js",
+  "bin": {
+    "gitrepotopdf": "dist/clone.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "README.md",
+    "package.json",
+    "package-lock.json",
+    "repo2pdf.ignore",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "start": "node dist/clone.js",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "prepublishOnly": "npm run format && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BankkRoll/Repo-to-PDF.git"
+  },
+  "keywords": [
+    "github",
+    "repository",
+    "pdf",
+    "clone",
+    "nodejs",
+    "convert",
+    "document",
+    "langchain",
+    "openai",
+    "chatgpt",
+    "utility",
+    "tool"
+  ],
+  "author": "Kevin Malik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BankkRoll/Repo-to-PDF/issues"
+  },
+  "homepage": "https://github.com/BankkRoll/Repo-to-PDF#readme",
+  "documentation": "https://github.com/BankkRoll/Repo-to-PDF#readme",
+  "contributors": [
+    {
+      "name": "malpou",
+      "url": "https://github.com/malpou"
+    },
+    {
+      "name": "LucasionGS",
+      "url": "https://github.com/LucasionGS"
+    },
+    {
+      "name": "jbirbal-skydom",
+      "url": "https://github.com/jbirbal-skydom"
+    }
+  ],
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "highlight.js": "^11.9.0",
+    "html-entities": "^2.3.6",
+    "inquirer": "^9.2.6",
+    "isbinaryfile": "^5.0.0",
+    "marked": "^17.0.5",
+    "ora": "^6.3.1",
+    "pdfkit": "^0.13.0",
+    "prettier": "^3.0.3",
+    "simple-git": "^3.18.0",
+    "strip-comments": "^2.0.1",
+    "svg-to-pdfkit": "^0.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/marked": "^5.0.2",
+    "@types/pdfkit": "^0.12.10",
+    "@types/strip-comments": "^2.0.1",
+    "typescript": "^5.1.3"
+  }
+}

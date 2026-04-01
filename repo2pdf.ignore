@@ -1,0 +1,5 @@
+{
+    "ignoredFiles": ["tsconfig.json", "dist", "node_modules"],
+    "ignoredExtensions": [".raw"],
+    "includedExtensions": [".png", ".jpg", ".jpeg", ".svg"]
+}
