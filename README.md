@@ -12,6 +12,15 @@ GitRepoToPDF is a versatile tool designed to seamlessly transform GitHub reposit
 
 This fork introduces major visual and document-rendering improvements that are not present in the original `repo2pdf`:
 
+### Visual Comparison 
+
+Here is a look at what the generated PDFs look like when compared side-by-side. 
+When prompted, remember to select **"Format Markdown files"**!
+
+| Original `repo2pdf` Output | `GitRepoToPDF` Output |
+|:---:|:---:|
+| <img src="./images/without-gitrepo-to-pdf.png" width="400"/> | <img src="./images/with-gitrepo-to-pdf.png" width="400"/> |
+
 - **🖼️ Full Vector & Raster Image Support:** Beautifully parses and renders inline Markdown images (like `.svg`, `.png`, `.jpg`) right alongside your documentation text instead of converting them to raw Base64 strings.
 - **📝 Native Markdown Formatting:** Replaces raw Markdown code blocks (`##`, `**`, etc.) with actual stylized fonts (Bold, Italics, Lists, and Headings) for a true "reading" experience.
 - **📊 Human-Readable Tables:** Markdown tables are no longer brutally cut off by page limits. They are parsed into clean, readable text layouts.
